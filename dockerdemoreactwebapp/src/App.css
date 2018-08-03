@@ -1,0 +1,119 @@
+.App {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.App-docker-logo {
+  height: 80px;
+}
+
+.App-truelogic-logo {
+  height: 60px;
+  margin-right: 20px;
+}
+
+.App-header {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(59, 159, 253);
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.body {
+  margin: 10px 10px 10px 10px;
+}
+
+.button {
+  height: 60px;
+  width: 200px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(59, 159, 253);
+}
+
+.remove-button {
+  height: 40px;
+  width: 100px;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(59, 159, 253);
+}
+
+.table-header {
+  background-color: rgb(59, 159, 253);
+}
+
+.container-row:hover {
+  background-color: #ddd;
+}
+
+#containers {
+  margin-top: 10px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#containers td, #containers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#containers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+}
+
+.modal-form {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  align-items: center;
+}
+
+.data-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: white;
+}
+
+.confirm-form {
+  display: flex;
+  width: 50%;
+}
+
+.confirm-button {
+  display: flex;
+  flex: 1;
+  border: none;
+  background-color: rgb(59, 159, 253);
+  font-size: 40px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+}
+
+.input {
+  height: 80px;
+  font-size: 40px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  margin: 50px 10px 50px 10px;
+}

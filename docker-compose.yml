@@ -1,0 +1,32 @@
+version: '2'
+
+services:
+  api:
+    build: ./dockerdemonetcoreapi/dockerdemonetcoreapi
+    ports:
+      - 8081:80
+    environment:
+      ELASTICSEARCH_URL: http://localhost:9200
+    links:
+      - database
+    depends_on:
+      - database
+  front:
+    build: ./dockerdemoreactwebapp
+    ports:
+      - 80:5000    
+    
+  database:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.3.2
+    container_name: elasticsearch
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - elastic:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+volumes:
+  elastic:
+    driver: local
